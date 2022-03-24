@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+
+    background: url(./images/bg-pattern-top-desktop.svg);
+}
+
+.container{
+    width: 90%;
+    height: 80%;
+    background-position: cover;
+    /* background-position:left top, right bottom; */
+    background-repeat: repeat;
+}
