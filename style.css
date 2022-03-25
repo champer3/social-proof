@@ -1,22 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
+  font-family: "Spartan", sans-serif;
 }
 
-body{
-
-    background: url(./images/bg-pattern-top-desktop.svg);
+body {
+  background: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-position: center;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, repeat;
 }
 
-.container{
-    width: 90%;
-    height: 80%;
-    background-position: cover;
-    /* background-position:left top, right bottom; */
-    background-repeat: repeat;
+h1 {
+  font-size: 4rem;
+  padding: 0rem;
+  color: hsl(300, 43%, 22%);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.container {
+  width: 70%;
+  padding-top: 5rem;
+  height: 100vh;
+  margin: auto;
+}
+
+.first {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-section {
+  flex: 1 1 30rem;
+  padding-right: 20rem;
+}
+
+.second-section {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  flex-wrap: wrap;
+}
+
+.review {
+  display: flex;
+  background: hsl(300, 24%, 96%);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.review h2 {
+  margin-left: 1rem;
+}
+
+.r1 {
+  align-self: flex-start;
+}
+
+.r2 {
+  align-self: center;
+}
+
+.r3 {
+  align-self: flex-end;
+}
+
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  height: 35vh;
+}
+
+.ref {
+  max-width: fit-content;
+  border-radius: 2rem;
+  padding: 3rem;
+  background: hsl(300, 43%, 22%);
+  color: white;
+  flex: 1 1 30rem;
+}
+
+.ref1 {
+  align-self: flex-start;
+  flex: 1 1 30rem;
+}
+
+.ref2 {
+  align-self: center;
+  margin: 0rem 2rem;
+  flex: 1 1 30rem;
+}
+
+.ref3 {
+  align-self: flex-end;
+  flex: 1 1 30rem;
+}
+
+.top {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.down {
+  margin-top: 2rem;
+}
+
+.txt {
+  padding-left: 2rem;
+}
+
+.ver {
+  color: hsl(333, 80%, 67%);
+}
+
+.top img {
+  border-radius: 50%;
+  height: 5rem;
 }
