@@ -90,7 +90,7 @@ p {
 
 .ref {
   max-width: fit-content;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 3rem;
   background: hsl(300, 43%, 22%);
   color: white;
@@ -134,4 +134,65 @@ p {
 .top img {
   border-radius: 50%;
   height: 5rem;
+}
+
+@media screen and (max-width: 933px){
+    .container {
+        width: 70%;
+        height: 100vh;
+        padding-top: 5rem;
+        margin: auto;
+      }
+
+      .first {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 500px;
+      }
+
+    .first-section {
+        padding-right: 0rem;
+        width: 100%;
+        text-align: center;
+        border: 1px solid red;
+      }
+      
+      .second-section {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0rem;
+        flex-wrap: wrap;
+      }
+
+      .review {
+        display: flex;
+        background: hsl(300, 24%, 96%);
+        border-radius: 1rem;
+        padding: 2rem 2rem;
+        margin-top: 2rem;
+        align-self: center;
+      }
+
+      .second {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .ref {
+        border-radius: 2rem;
+        padding: 3rem;
+        background: hsl(300, 43%, 22%);
+        color: white;
+        align-self: center;
+        justify-self: center;
+      }
+
+      .ref2 {
+        align-self: center;
+        margin: 2rem 0rem;
+        flex: 1 1 30rem;
+      }
 }
