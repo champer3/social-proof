@@ -85,7 +85,6 @@ p {
 .second {
   display: flex;
   flex-wrap: wrap;
-  height: 35vh;
 }
 
 .ref {
@@ -137,6 +136,9 @@ p {
 }
 
 @media screen and (max-width: 933px){
+    html{
+        font-size: 40%;
+    }
     .container {
         width: 70%;
         height: 100vh;
@@ -147,14 +149,13 @@ p {
       .first {
         display: flex;
         flex-wrap: wrap;
-        min-height: 500px;
+        min-height: 60vh;
       }
 
     .first-section {
         padding-right: 0rem;
         width: 100%;
         text-align: center;
-        border: 1px solid red;
       }
       
       .second-section {
@@ -166,11 +167,19 @@ p {
 
       .review {
         display: flex;
+        flex-direction: column;
         background: hsl(300, 24%, 96%);
         border-radius: 1rem;
-        padding: 2rem 2rem;
+        padding: 1rem 2rem;
         margin-top: 2rem;
         align-self: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .htex{
+          margin-top: 1rem;
+          text-align: center;
       }
 
       .second {
