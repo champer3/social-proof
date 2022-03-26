@@ -40,9 +40,10 @@ p {
 }
 
 .first {
-  min-height: 40vh;
+  /* min-height: 40vh; */
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 
 .first-section {
