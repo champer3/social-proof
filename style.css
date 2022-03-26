@@ -40,18 +40,18 @@ p {
 }
 
 .first {
-  height: 50vh;
+  min-height: 40vh;
   display: flex;
   flex-wrap: wrap;
 }
 
 .first-section {
-  flex: 1 1 30rem;
-  padding-right: 20rem;
+  flex: 1 1 45rem;
+  padding-right: 15rem;
 }
 
 .second-section {
-  flex: 1 1 30rem;
+  flex: 1 1 45rem;
   display: flex;
   flex-direction: column;
   padding-right: 10rem;
@@ -93,23 +93,20 @@ p {
   padding: 3rem;
   background: hsl(300, 43%, 22%);
   color: white;
-  flex: 1 1 30rem;
+  flex: 1 1 33rem;
 }
 
 .ref1 {
   align-self: flex-start;
-  flex: 1 1 30rem;
 }
 
 .ref2 {
   align-self: center;
   margin: 0rem 2rem;
-  flex: 1 1 30rem;
 }
 
 .ref3 {
   align-self: flex-end;
-  flex: 1 1 30rem;
 }
 
 .top {
@@ -135,9 +132,9 @@ p {
   height: 5rem;
 }
 
-@media screen and (max-width: 933px){
+@media screen and (max-width: 1281px){
     html{
-        font-size: 40%;
+        font-size: 55%;
     }
     .container {
         width: 70%;
@@ -149,7 +146,7 @@ p {
       .first {
         display: flex;
         flex-wrap: wrap;
-        min-height: 60vh;
+        /* min-height: 40vh; */
       }
 
     .first-section {
@@ -199,9 +196,14 @@ p {
         justify-self: center;
       }
 
+      .ref1{
+          margin-right: 2rem;
+      }
+
       .ref2 {
         align-self: center;
         margin: 2rem 0rem;
+        margin-right: 2rem;
         flex: 1 1 30rem;
       }
 }
